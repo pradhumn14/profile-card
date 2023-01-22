@@ -34,7 +34,7 @@ body {
 }
 
 .card .banner {
-    background: url(.//img/IMG20211205153216.jpg);
+    background: url(./img/IMG20211205153216.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
