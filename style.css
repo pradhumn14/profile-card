@@ -51,6 +51,9 @@ body {
     overflow: hidden;
     border: 5px solid #fff;
     transform: translateY(50%);
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card .banner .imgBox img {
@@ -66,5 +69,91 @@ body {
 .card .card-body {
     position: relative;
     padding: 100px 30px 40px;
+}
 
+.card .card-body .menu {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 100ms ease-in-out;
+}
+
+.card .card-body .menu:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+.card h2.name {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card .title {
+    color: var(--grey);
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card .actions {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.card .actions .follow-info {
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.card .actions .follow-info h2 {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.card .actions .follow-info h2 span {
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
+.card .actions .follow-info h2 small {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card .actions .follow-info h2:hover {
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.card .actions .follow-info h2:hover span {
+    color: var(--dark-blue);
+}
+
+.card .actions button {
+    background-color: var(--btn-yellow);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card .actions button:hover {
+    background-color: var(--btn-hover-yellow);
 }
