@@ -31,5 +31,40 @@ body {
     overflow: hidden;
     border-radius: 2rem;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    
+}
+
+.card .banner {
+    background: url(.//img/IMG20211205153216.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card .banner .imgBox {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    transform: translateY(50%);
+}
+
+.card .banner .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .banner .imgBox:hover {
+    transform: translateY(50%) scale(1.2);
+}
+
+.card .card-body {
+    position: relative;
+    padding: 100px 30px 40px;
+
 }
